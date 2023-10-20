@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>QR Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cappuccino: #4b3832;
+            --background-color: #D5E1EF;
+        }
+        * {
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+        body {
+            background-color: var(--background-color);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .qr-card {
+            border-radius: 20px;
+            background-color: white;
+            padding: 1rem;
+            padding-bottom: 40px;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            box-shadow: 0px 25px 25px grey;
+        }
+        .header-body {
+            background-color: #2C7DFA;
+            width: 288px;
+            height: 288px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .qr-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .qr-body-heading {
+            text-align: center;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: normal;
+        }
+
+        .qr-body-subheading {
+            text-align: center;
+            color: #7D889E;
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: 0.19px;
+            line-height: normal;
+            gap: 1rem;
+            padding: .5rem 1rem 0 1rem;
+        }
+        /* Small (sm) */
+        @media (min-width: 640px) {
+        }
+        /* Medium (md) */
+        @media (min-width: 768px) {
+            /* Your styles for the medium breakpoint here */
+        }
+        /* Large (lg) */
+        @media (min-width: 1024px) {
+            /* Your styles for the large breakpoint here */
+        }
+        /* Extra Large (xl) */
+        @media (min-width: 1280px) {
+            /* Your styles for the extra large breakpoint here */
+        }
+        /* 2XL (2xl) */
+        @media (min-width: 1536px) {
+            /* Your styles for the 2XL breakpoint here */
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-card">
+        <div class="qr-header">
+            <div class="header-body">
+                <span>
+                <img src="assets/qr-code.svg" alt="qr code img"/>
+                </span>
+            </div>
+        </div>
+        <div class="qr-content"></div>
+            <div class="qr-body-heading">
+                Improve your front-end skills by building projects
+            </div>
+            <div class="qr-body-subheading">
+                Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+            </div>
+        </div>
+    </div>
+</body>
+</html>
